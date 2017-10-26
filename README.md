@@ -10,3 +10,13 @@
  */
 ```
 
+```java
+/**
+可在调用CollectorActivity.finishAllActivity()之后，
+再调用killProcess()，以保证完全退出。
+
+注意：killProcess()只能用于杀掉当前进程，不能杀死其他进程
+ */
+android.os.Process.killProcess(android.os.Process.myPid());
+```
+
